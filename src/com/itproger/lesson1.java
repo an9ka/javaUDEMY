@@ -1,6 +1,6 @@
 package com.itproger;
 
-public class Main {    // Обозначаем класс
+public class lesson1 {    // Обозначаем класс
     public static void main(String[] args) {  // Обозначаем функцию
         System.out.println("\"Hel lo\"\n\t\t\"World\"!"); // println - выводит все и затем  с помощью ln переводит на новую строку
         System.out.println("       РУБАИ     ");
