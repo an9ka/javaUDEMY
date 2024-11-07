@@ -1,4 +1,4 @@
-package com.itproger;
+package com.udemy;
 
 public class lesson2 {
     public static void main(String [] args) {

@@ -1,4 +1,4 @@
-package com.itproger;
+package com.udemy;
 
 public class lesson1 {    // Обозначаем класс
     public static void main(String[] args) {  // Обозначаем функцию
