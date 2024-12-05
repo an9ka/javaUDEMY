@@ -1,4 +1,4 @@
-package com.udemy;
+package com.udemy.lesson5P;
 //005 Урок 5 Создание объектов. Понятие «конструктор». Объявление и вызов методов
 public class lesson5 {
     int sum(int a, int b, int c){  //параметры
