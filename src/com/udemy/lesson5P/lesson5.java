@@ -10,7 +10,7 @@ public class lesson5 {
 
 
 class testLesson5{
-    public static void main(String[] args){
+    public static void main(String[] args){ 
         lesson5 t = new lesson5();
         t.sum(1,2,3);
         int sum3 = t.sum(1,2,3);
