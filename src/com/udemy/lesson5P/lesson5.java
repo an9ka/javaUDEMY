@@ -6,6 +6,13 @@ public class lesson5 {
         String s = "hello";
         return result;
     }
+    //Вызов метода внутри метода
+
+    int sredneeArifm(int a1, int b1, int c1){
+        int result2 = sum(a1, b1, c1)/3;
+        return result2;
+    }
+
 }
 
 
@@ -16,5 +23,7 @@ class testLesson5{
         int sum3 = t.sum(1,2,3);
         System.out.println(sum3);
         System.out.println(t.sum(3,5,2)); // аргументы функции
+
+        System.out.println(t.sredneeArifm(20,40,60));
     }
 }
