@@ -1,21 +1,20 @@
 package com.udemy.lesson4Package;
 
 public class Car {
-    String color = "red";
-    String engine = "v6";
+    Car(String cvet, String motor){  //Создание конструктора с параметрами
+    color = cvet;
+    engine = motor;
+    }
+
+    String color;
+    String engine;
     String name = "Anna";
    // String name = new String("Tetst");
 }
 
 class CarTest {
     public static void main(String[] args){
-        int a;
-        Car car1 = new Car();
-        car1.color = "black";
-        car1.engine = "v8";
-
-        System.out.println("Color: " + car1.color);
-        System.out.println("Engine: " + car1.engine);
-        System.out.println(new Car().color);
+        Car car1 = new Car("red", "v5");
+        System.out.println(car1.color + " " + car1.engine);
     }
 }
