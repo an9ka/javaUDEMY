@@ -1,13 +1,35 @@
 package com.udemy.lesson4Package;
 
 public class BankAccount { //Любой класс является типом данных. Референс тип данных
-    int id;
-    String name;
-    double balance;}
-    // переменные объекта, относятся, к каждому созданному объекту
+    int id = 10;
+    String name = "Fedor";
+    double balance = 100;// переменные объекта, относятся, к каждому созданному объекту
+
+    void popolnenieScheta(double summaPopolneniya){
+    System.out.println("Balance do: " + balance);
+    System.out.println("Balance popolnen na " + summaPopolneniya);
+    balance+=summaPopolneniya;
+    System.out.println("Balance posle: " + balance);
+    }
+
+    void snyatieScheta(double summaSnyatiya){
+        System.out.println("Balance do: " + balance);
+        System.out.println("Balance umenshen na " + summaSnyatiya);
+        balance-=summaSnyatiya;
+        System.out.println("Balance posle: " + balance);
+    }
+}
 
    class BankAccountTest {
-    public static void main(String[] args) {
+
+       public static void main(String[] args) {
+           BankAccount MyAccount = new BankAccount();
+           MyAccount.popolnenieScheta(23.54);
+           MyAccount.snyatieScheta(34.43);
+
+       }
+   }
+ /*   public static void main(String[] args) {
         BankAccount MyAccount = new BankAccount(); //MyAccount - имя переменной, BankAccount() - вызов конструктора, создание объекта
         BankAccount YourAccount = new BankAccount();
         BankAccount HisAccount = new BankAccount();
@@ -25,9 +47,5 @@ public class BankAccount { //Любой класс является типом �
         HisAccount.name = "Ivan";
         HisAccount.balance = 12.40;
 
-
-
         System.out.println(YourAccount.name);
-    }
-
-   }
+    } */
