@@ -8,9 +8,17 @@ public class student {
     double gradeMath;
     double gradeEconom;
     double foreignLanguage;
+
+
 }
 
 class StudentTest{
+    double srednyaArifm(student st) {
+        double sredOcenka = (st.gradeEconom + st.gradeMath + st.foreignLanguage) / 3;
+        System.out.println("Srednya ocenka " + sredOcenka);
+        return sredOcenka;
+    }
+
     public static void main(String[] args){
         student student1 = new student();
         student student2 = new student();
@@ -28,9 +36,11 @@ class StudentTest{
         student3.gradeEconom = 4.7;
         student3.foreignLanguage = 4.9;
 
-        System.out.println("Средняя оценка первого студента"  + " " + (student1.foreignLanguage + student1.gradeMath + student1.gradeEconom) /3);
-        System.out.println("Средняя оценка второго студента"  + " " + (student2.foreignLanguage + student2.gradeMath + student2.gradeEconom) /3);
-        System.out.println("Средняя оценка третьего студента"  + " " + (student3.foreignLanguage + student3.gradeMath + student3.gradeEconom) /3);
+        StudentTest sTest = new StudentTest();
+        sTest.srednyaArifm(student1);
+        sTest.srednyaArifm(student2);
+        sTest.srednyaArifm(student3);
+
 
     }
 }
