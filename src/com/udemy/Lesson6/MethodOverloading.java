@@ -5,6 +5,11 @@ public class MethodOverloading {
         System.out.println(i1);
         System.out.println("Data type is int");
     }
+    void show(int a, int b){
+        System.out.println(a);
+        System.out.println("Data type is int");
+    }
+
     void show(boolean b1){
         System.out.println(b1);
         System.out.println("Data type is boolean");
@@ -12,6 +17,13 @@ public class MethodOverloading {
     void show(String s1){
         System.out.println(s1);
         System.out.println("Data type is String");
+    }
+
+    void show(String s, int a){
+        System.out.println("String: " + s + "  " + "int: " + a);
+    }
+    void show(int a, String s){
+        System.out.println("Good day");
     }
 }
 
@@ -24,5 +36,6 @@ class MethodOverloadingTest{
         mO.show(b);
         String s = "Hello";
         mO.show(s);
+        mO.show("string", 10);
     }
 }
