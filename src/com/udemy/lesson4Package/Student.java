@@ -43,7 +43,5 @@ class StudentTest{
         sTest.srednyaArifm(student1);
         sTest.srednyaArifm(student2);
         sTest.srednyaArifm(student3);
-
-
     }
 }
